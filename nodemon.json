@@ -1,7 +1,0 @@
-{
-    "ext": "js",
-    "ignore": [
-        "node_modules",
-        "template"
-    ]
-}
