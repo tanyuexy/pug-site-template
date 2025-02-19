@@ -12,7 +12,7 @@ export const config = {
   //配置的国家数组将会遍历参数传递给getData.js中的函数并且影响翻译时默认将会翻译到的语言以及打包时候将会打包哪些国家的数据内容 数组的第一个国家将会是开发环境下默认访问到的国家的数据
   languageList: ["us"],
   //所有国家模版中都会用到的数据pug文件中可以使用common对象去访问
-  commonData: { version: "1.1.0" },
+  commonData: { version: "1.0.0" },
   //pug打包成生成函数的根目录名字
   fnOutput: "sites",
   //pug打包成html的根目录名字
