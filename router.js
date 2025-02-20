@@ -1,5 +1,5 @@
 //{url, language, device, getR2Data} = this
-export default router = [
+export const router = [
   {
     matchFn: function () {
       // 匹配以 "/detail/" 开头的路由
