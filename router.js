@@ -13,7 +13,7 @@ export const router = [
     },
     getData: function () {
       // 获取当前页面的 R2 数据
-      return this.getR2Data(`/detail/${this.url.page_name}.json`);
-    }
-  }
+      return this.getR2Data(`/detail/${this.url.pathname}.json`);
+    },
+  },
 ];
