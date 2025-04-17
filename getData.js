@@ -3,6 +3,11 @@ import axios from "axios";
 import languageData from "./languageData.js";
 axios.defaults.baseURL = "http://new.sp.com/xxxxx";
 axios.defaults.timeout = 1000 * 60 * 60;
+
+export async function init(language) {
+  //初始化操作,在获取页面数据前执行
+}
+
 //pug文件中可以使用common.lang 去访问数据
 export async function get_common_data(language) {
   let data = languageData[language];
