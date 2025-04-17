@@ -4,7 +4,7 @@ import languageData from "./languageData.js";
 axios.defaults.baseURL = "http://new.sp.com/xxxxx";
 axios.defaults.timeout = 1000 * 60 * 60;
 
-export async function init(language) {
+export async function init() {
   //初始化操作,在获取页面数据前执行
 }
 
