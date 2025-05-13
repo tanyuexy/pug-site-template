@@ -100,6 +100,45 @@ npm run lang k=a,b c=jp,fr
 
 **npm run buildStatic：** 把数据、静态资源将pug模版生成html然后打包
 
+## 图片压缩功能
+
+本项目集成了 imagemin 图片压缩功能，可以帮助减小图片文件大小，提高网站加载速度。
+
+### 基本用法
+
+```bash
+# 使用默认设置压缩 template/static 目录下的所有图片 压缩比例为0.7
+npm run imagemin
+
+# 指定要压缩的目录路径（相对于项目根目录）
+npm run imagemin p=template/static/img
+
+# 指定压缩质量（0-1之间，默认为0.7）
+npm run imagemin q=0.8
+
+# 同时指定路径和质量
+npm run imagemin p=template/static/img q=0.6
+```
+
+### 参数说明
+
+- `p`=：指定要压缩的目录路径，相对于项目根目录
+- `q`=：指定压缩质量，取值范围为0-1之间，默认为0.7
+
+### 支持的图片格式
+
+- JPEG (.jpg, .jpeg)
+- PNG (.png)
+- GIF (.gif)
+- SVG (.svg)
+
+### 注意事项
+
+1. 图片压缩是不可逆操作，建议在压缩前备份原始图片
+2. 压缩质量越低，文件越小，但图片质量可能会下降
+3. SVG 文件的压缩主要是移除冗余信息，不会影响质量
+4. 大量图片压缩可能需要一些时间，请耐心等待
+
 ## 补充
 
 1. getData.js中会有一个保留的get_common_data(language)函数参数language为国家 您可以根据这个函数去返回各个国家所需要的不同数据建议是将这部分数据放在/langConfig/languageData.js这将可以结合翻译模块去使用。

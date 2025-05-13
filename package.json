@@ -12,7 +12,8 @@
     "buildStatic": "node index.js",
     "lang": "node index.js",
     "build": "npm run getData && npm run buildFn",
-    "update": "npm install pug-site-core@latest"
+    "update": "npm install pug-site-core@latest",
+    "imagemin": "node index.js"
   },
   "keywords": [],
   "author": "",

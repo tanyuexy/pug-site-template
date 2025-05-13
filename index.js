@@ -6,10 +6,11 @@ const {
   fetchDataToJsonFile,
   buildFn,
   buildStatic,
-  translateLanguageData
+  translateLanguageData,
+  processImagemin
 } = pugSiteCore;
 let curCmd = process.env.npm_lifecycle_event;
-
+const args = process.argv.slice(2);
 try {
   switch (curCmd) {
     case "getFun":
@@ -17,7 +18,6 @@ try {
       break;
     case "getData":
       await generateGetDataFn();
-      const args = process.argv.slice(2);
       await fetchDataToJsonFile(args);
       break;
     case "dev":
@@ -31,9 +31,12 @@ try {
       break;
     case "buildStatic":
       await buildStatic();
-      break;
+      break;      
     case "lang":
       await translateLanguageData();
+      break;
+    case "imagemin":
+      await processImagemin(args);
       break;
     default:
       console.log(`未知的命令: ${curCmd}`);
