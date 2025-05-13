@@ -49,6 +49,7 @@
         const placeholderDom = document.querySelector(placeholder);
         if (placeholderDom) {
           placeholderElement = placeholderDom.cloneNode(true);
+          placeholderElement.style.display = "block";
         }
       } else {
         // 如果是HTML字符串
