@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --ext js --ignore node_modules/ --ignore template/ index.js",
+    "dev": "nodemon --ignore jsonData/ --ignore node_modules/ --ignore template/ --ext js index.js",
     "getData": "node index.js",
     "getFun": "node index.js",
     "compileFn": "node index.js",
