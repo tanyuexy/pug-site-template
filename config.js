@@ -3,6 +3,20 @@ export const config = {
   devServer: {
     //开发服务器的端口
     port: 80,
+    /**
+     * 代理配置，类似Vue的代理配置
+     * 示例：
+     * proxy: {
+     *   '/api': {
+     *     target: 'http://example.com',     // 必填，代理目标地址
+     *     changeOrigin: true,               // 可选，是否改变源地址，默认true
+     *     pathRewrite: { '^/api': '' },     // 可选，路径重写规则
+     *     secure: false,                    // 可选，是否验证SSL证书，默认true
+     *     ws: true                          // 可选，是否代理websocket，默认true
+     *   },
+     *   '/simple-api': 'http://simple.example.com'  // 简化写法
+     */
+    proxy: {},
   },
   //配置getData.js中自动生成的函数模版
   getDataFnTemplate: function template(language) {
@@ -22,7 +36,7 @@ export const config = {
   //自定义打包的数据
   customBuildData: [],
   //getData下载数据的时候会并发多少个(如果下载的时候socket断了可以把这个改低点)
-  fetchDataConcurrencyLimit: 16,
+  fetchDataConcurrencyLimit: 6,
   // 是否监听语言文件变化重新获取_common.json的数据
   changeUpdateCommon: true,
   // 是否混淆js文件
