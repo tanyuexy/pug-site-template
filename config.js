@@ -41,4 +41,6 @@ export const config = {
   changeUpdateCommon: true,
   // 是否混淆js文件
   obfuscateJavaScript: true,
+  // 是否开启样式作用域隔离处理
+  isScopeIsolation: false,
 };
