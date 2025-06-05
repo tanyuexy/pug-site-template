@@ -13,7 +13,8 @@
     "lang": "node index.js",
     "build": "npm run getData && npm run buildFn",
     "update": "npm install pug-site-core@latest",
-    "imagemin": "node index.js"
+    "imagemin": "node index.js",
+    "debug": "node index.js"
   },
   "keywords": [],
   "author": "",

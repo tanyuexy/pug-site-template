@@ -38,6 +38,9 @@ try {
     case "imagemin":
       await processImagemin(args);
       break;
+    case "debug":
+      await createDebugTemplate();
+      break;
     default:
       console.log(`未知的命令: ${curCmd}`);
   }

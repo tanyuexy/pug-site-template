@@ -16,7 +16,15 @@ export const config = {
      *   },
      *   '/simple-api': 'http://simple.example.com'  // 简化写法
      */
+    // Pug调试功能配置
+    isDebug: false,
     proxy: {},
+    // abtest功能配置
+    abtest: {
+      enabled: false,
+      // 当前测试组 o或者不配置为原版
+      curVariant: "o"
+    }
   },
   //配置getData.js中自动生成的函数模版
   getDataFnTemplate: function template(language) {
@@ -37,10 +45,10 @@ export const config = {
   customBuildData: [],
   //getData下载数据的时候会并发多少个(如果下载的时候socket断了可以把这个改低点)
   fetchDataConcurrencyLimit: 6,
-  // 是否监听语言文件变化重新获取_common.json的数据
+  //是否监听语言文件变化重新获取_common.json的数据
   changeUpdateCommon: true,
-  // 是否混淆js文件
+  //是否混淆js文件
   obfuscateJavaScript: true,
-  // 是否开启样式作用域隔离处理
+  //是否开启样式作用域隔离处理
   isScopeIsolation: false,
 };

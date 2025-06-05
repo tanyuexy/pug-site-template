@@ -1,4 +1,5 @@
 //{url, language, device, getR2Data,env} = this
+export const abtestRouter = {}
 export const router = [{
   // matchFn: function () {
   //   // 匹配以 "/detail/" 开头的路由
