@@ -43,6 +43,8 @@ export const config = {
   buildStaticDirArr: [],
   //自定义打包的数据
   customBuildData: [],
+  //自定义打包的html文件
+  customBuildHtml: [],
   //getData下载数据的时候会并发多少个(如果下载的时候socket断了可以把这个改低点)
   fetchDataConcurrencyLimit: 6,
   //是否监听语言文件变化重新获取_common.json的数据
