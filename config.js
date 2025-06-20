@@ -38,7 +38,7 @@ export const config = {
   //pug打包成生成函数的根目录名字
   fnOutput: "sites",
   //pug打包成html的根目录名字
-  staticOutput: "sites",
+  staticOutput: "staticSites",
   //打包会打包/template/static/的哪些文件夹参数为空数组或者undefined则全打包(有些js、css文件将会嵌入pug中你可以区分不打包进去)
   buildStaticDirArr: [],
   //自定义打包的数据
