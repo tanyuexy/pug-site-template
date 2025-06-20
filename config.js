@@ -53,4 +53,6 @@ export const config = {
   obfuscateJavaScript: true,
   //是否开启样式作用域隔离处理
   isScopeIsolation: false,
+  //是否压缩HTML文件 (buildStatic打包时生效,开启后打包时间会增加大约2倍)
+  minifyHtml: true,
 };
