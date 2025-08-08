@@ -26,6 +26,10 @@ export const config = {
       curVariant: "o"
     }
   },
+  siteConfig: {
+    siteName: "",
+    siteAbbr: "",
+  },
   //配置getData.js中自动生成的函数模版
   getDataFnTemplate: function template(language) {
     let data = { page_name: "" } || [{ page_name: "" }];
